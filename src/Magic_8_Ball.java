@@ -6,11 +6,51 @@ public class Magic_8_Ball {
         //Declare
         Scanner keyboard;
         keyboard = new Scanner(System.in);
-        int testing;
+        int number;
 
         //Initializing
-        System.out.println("Pick a number between 1 and 100.");
-        testing = keyboard.nextInt();
+        System.out.println("Think of your question. Think really hard.");
+        System.out.println("Now, pick a number from 0-100.");
+        number = keyboard.nextInt();
+
+        if (number == 0){
+            System.out.println("Zero is such an unlucky number.. Try again later.");
+        }
+        else if (number < 10){
+            System.out.println("The outcome is not looking good...");
+        }
+        else if (number < 20){
+            System.out.println("Go for it!");
+        }
+        else if (number < 30){
+            System.out.println("I wouldn't do that if I were you.");
+        }
+        else if (number < 40){
+            System.out.println("It'll turn out great. Don't doubt yourself so much.");
+        }
+        else if (number < 50){
+            System.out.print("You go for the middle, huh? Well, I see bad luck for you. Maybe next time?");
+        }
+        else if (number < 60){
+            System.out.println("Wow! You have the best luck today! You'll do wonderfully.");
+        }
+        else if (number < 70){
+            System.out.println("Wow... You have the worse luck today. I'd just go home... Things don't look too good.");
+        }
+        else if (number < 80){
+            System.out.println("Good fortune! I say go for it! Nothing bad will happen!");
+        }
+        else if (number < 90){
+            System.out.println("I don't know about this, friend. I would maybe try again later... And with a different number.");
+        }
+        else if (number < 100){
+            System.out.println("Sounds good to me!");
+        }
+        else if (number == 100){
+            System.out.println("Did you seriously pick 100..? It's a no from me.");
+        }
+
+
 
 
 
