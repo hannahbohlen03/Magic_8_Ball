@@ -10,6 +10,7 @@ public class Magic_8_Ball {
 
         //Initializing
         System.out.println("Think of your question. Think really hard.");
+        System.out.println(" ");
         System.out.println("Now, pick a number from 0-100.");
         number = keyboard.nextInt();
 
@@ -29,10 +30,10 @@ public class Magic_8_Ball {
             System.out.println("It'll turn out great. Don't doubt yourself so much.");
         }
         else if (number < 50){
-            System.out.print("You go for the middle, huh? Well, I see bad luck for you. Maybe next time?");
+            System.out.print("I'm guessing " + number + " is not your lucky number.");
         }
         else if (number < 60){
-            System.out.println("Wow! You have the best luck today! You'll do wonderfully.");
+            System.out.println("Wow! You have the best luck today! " + number + " must be your lucky number today!");
         }
         else if (number < 70){
             System.out.println("Wow... You have the worse luck today. I'd just go home... Things don't look too good.");
