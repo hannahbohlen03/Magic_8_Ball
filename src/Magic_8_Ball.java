@@ -9,8 +9,8 @@ public class Magic_8_Ball {
         int number;
 
         //Initializing
-        System.out.println("Think of your question. Think really hard.");
         System.out.println(" ");
+        System.out.println("Think of your question. Think really hard.");
         System.out.println("Now, pick a number from 0-200.");
         number = keyboard.nextInt();
 
