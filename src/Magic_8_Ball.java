@@ -6,13 +6,17 @@ public class Magic_8_Ball {
         //Declare
         Scanner keyboard;
         keyboard = new Scanner(System.in);
+        String userName;
         int number;
 
         //Initializing
-        System.out.println(" ");
-        System.out.println("Think of your question. Think really hard.");
+        System.out.println("What is your name, curious one?");
+        userName = keyboard.nextLine();
+        System.out.println(userName+ ", think of a scenario that you want to go well, like should you ask someone on a date or if you should study tonight.");
         System.out.println("Now, pick a number from 0-200.");
+        System.out.println(" ");
         number = keyboard.nextInt();
+        System.out.println(" ");
 
         if (number == 0){
             System.out.println("Zero is such an unlucky number.. Try again later.");
@@ -24,25 +28,25 @@ public class Magic_8_Ball {
             System.out.println("Go for it!");
         }
         else if (number < 30){
-            System.out.println("I wouldn't do that if I were you.");
+            System.out.println("I wouldn't do that if I were you, " + userName + ".");
         }
         else if (number < 40){
-            System.out.println("It'll turn out great. Don't doubt yourself so much.");
+            System.out.println("You need to do that for sure. Don't let me down!");
         }
         else if (number < 50){
             System.out.print("I'm guessing " + number + " is not your lucky number.");
         }
         else if (number < 60){
-            System.out.println("Yes! You have the best luck today! " + number + " must be your lucky number!");
+            System.out.println("Yes! Do it! " + number + " must be your lucky number!");
         }
         else if (number < 70){
             System.out.println("Wow... You have the worse luck today. Things don't look too great for you.");
         }
         else if (number < 80){
-            System.out.println("Good fortune! I think everything will turn out well this time!");
+            System.out.println("I think everything will turn out well this time!");
         }
         else if (number < 90){
-            System.out.println("I don't know about this, friend. I would maybe try again later... And with a different number.");
+            System.out.println("I don't know about this, friend. I would maybe try again later... And use a different number.");
         }
         else if (number < 100){
             System.out.println("Sounds good to me!");
@@ -51,10 +55,10 @@ public class Magic_8_Ball {
             System.out.println("Did you seriously pick 100..? It's a no from me.");
         }
         else if (number < 110){
-            System.out.println(number + "%! Seems like you got some extra credit today!");
+            System.out.println("I think that us a very good idea. YOu'll be very happy with the outcome.");
         }
         else if (number < 120){
-            System.out.println("Man, I don't know. Try again later.");
+            System.out.println("ERROR TRY AGAIN LATER");
         }
         else if (number < 130){
             System.out.println("Sure thing! I think that's a very good idea.");
@@ -81,7 +85,10 @@ public class Magic_8_Ball {
             System.out.println("You picked a very unlucky number! Don't do it, I beg you!");
         }
         else if (number == 200){
-            System.out.println("200? Really? Fine... Bad luck for you.");
+            System.out.println("200? Really? Fine... Come back later. Or not, I don't care.");
+        }
+        else if (number > 200){
+            System.out.println("You didn't listen to the instructions. You learned how to read instruction in what, 2nd grade?");
         }
     }
 }
